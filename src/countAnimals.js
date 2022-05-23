@@ -29,4 +29,5 @@ console.log(countAnimals());
 // todas as especies e a quantidade
 // a cada iteração do forEach ele cria uma chave com o nome do animal
 // e da o valor da quantidade dele ex: 5 leões
+
 module.exports = countAnimals;
