@@ -1,14 +1,13 @@
-/* eslint-disable no-param-reassign */
 const data = require('../data/zoo_data');
 
 const { child: num3, adult: num2, senior: num1 } = data.prices;
 
 function countEntrants(entrants) {
-  return entrants.reduce((elemento1, elemento2) => {
-    if (elemento2.age < 50 && elemento2.age >= 18) elemento1.adult += 1;
-    if (elemento2.age < 18) elemento1.child += 1;
-    if (elemento2.age >= 50) elemento1.senior += 1;
-    return elemento1;
+  return entrants.reduce((acc, elemento2) => {
+    if (elemento2.age < 50 && elemento2.age >= 18) acc.adult += 1;
+    if (elemento2.age < 18) acc.child += 1;
+    if (elemento2.age >= 50) acc.senior += 1;
+    return acc;
   }, { child: 0, adult: 0, senior: 0 });
 }
 
