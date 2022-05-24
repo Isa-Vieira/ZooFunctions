@@ -1,4 +1,4 @@
-const { employees } = require('../data/zoo_data');
+/* const { employees } = require('../data/zoo_data');
 const data = require('../data/zoo_data');
 
 function getEmployeesCoverage(objeto) {
@@ -8,4 +8,4 @@ function getEmployeesCoverage(objeto) {
   };
 }
 
-module.exports = getEmployeesCoverage;
+module.exports = getEmployeesCoverage; */
